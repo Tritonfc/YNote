@@ -1,0 +1,20 @@
+<resources>
+    <string name="app_name">Y Note</string>
+    <string name="Class">Class</string>
+    <string name="B1">B1 Note</string>
+    <string name="B2">B2 Note</string>
+    <string name="B3">B3 Note</string>
+    <string name="create_class">Create a new class</string>
+    <string name="Delete">Delete</string>
+    <string name="Export">Export to Google Drive</string>
+    <string name="create_class_hint">What\'s the name of this class?</string>
+
+    <string name="alert_dialog_title">Select Image</string>
+
+    <string-array name="image_options">
+        <item>Choose photo from gallery</item>
+        <item>Take Picture with Camera</item>
+    </string-array>
+    <!-- TODO: Remove or change this placeholder text -->
+    <string name="hello_blank_fragment">Hello blank fragment</string>
+</resources>

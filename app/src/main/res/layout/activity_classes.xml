@@ -1,0 +1,84 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ClassesActivity">
+
+    <com.google.android.material.appbar.AppBarLayout
+        android:id="@+id/appBar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="#FAFAFA">
+
+        <androidx.appcompat.widget.Toolbar
+            android:id="@+id/classes_tool_bar"
+            android:layout_width="wrap_content"
+            android:layout_height="?attr/actionBarSize">
+
+
+        </androidx.appcompat.widget.Toolbar>
+    </com.google.android.material.appbar.AppBarLayout>
+
+    <androidx.appcompat.widget.SearchView
+        android:id="@+id/search_bar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/appBar"
+        android:layout_marginStart="10dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginEnd="10dp"
+        android:background="@drawable/round_edittext"
+        android:drawableLeft="@drawable/search_icon"
+        android:hint="Search for a Class"
+        android:imeOptions="actionSearch"
+        android:inputType="text"
+        android:padding="5dp" />
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/classes_recycler"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_below="@+id/search_bar"
+        android:layout_marginStart="10dp"
+        android:layout_marginEnd="10dp"
+        android:paddingTop="20dp"
+        app:layout_behavior="@string/appbar_scrolling_view_behavior" />
+
+    <View
+        android:layout_width="match_parent"
+        android:layout_height="1dp"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="70dp"
+        android:background="#E0E0E0" />
+
+    <ImageView
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentStart="true"
+        android:layout_marginStart="10dp"
+        android:layout_marginBottom="10dp"
+        android:layout_toEndOf="@+id/calendar"
+        android:clickable="true"
+        android:src="@drawable/play_image"
+        app:tint="@color/colorAccent"
+
+        />
+
+    <com.google.android.material.floatingactionbutton.FloatingActionButton
+        android:id="@+id/classes_floating"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentEnd="true"
+        android:layout_alignParentBottom="true"
+        android:layout_gravity="bottom|end"
+        android:layout_marginEnd="15dp"
+        android:layout_marginBottom="5dp"
+        android:backgroundTint="#FFFFFF"
+        android:clickable="true"
+        android:src="@drawable/add_image"
+        app:borderWidth="0dp" />
+
+</RelativeLayout>

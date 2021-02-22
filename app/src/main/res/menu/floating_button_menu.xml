@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+    <item
+        android:id="@+id/new_class"
+        android:title="@string/Class"/>
+
+    <item
+        android:id="@+id/b1_note"
+        android:title="@string/B1"/>
+    <item
+        android:id="@+id/b2_note"
+        android:title="@string/B2"/>
+
+    <item
+        android:id="@+id/b3_note"
+        android:title="@string/B3"/>
+
+
+</menu>
