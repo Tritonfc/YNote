@@ -43,6 +43,7 @@ public class AnnouncementsActivity extends AppCompatActivity {
     private FloatingActionButton floatingActionButton;
     private FirebaseFirestore db = FirebaseFirestore.getInstance();
     private static final String KEY_USER = "userName";
+    private static final String KEY_EMPTY = "Field cannot be empty";
     private static final String KEY_ANNOUNCEMENTS = "Announcements";
     private static final String KEY_PHOTO = "userPic";
     private static final String KEY_ANNOUNCEMENT = "announcement";
@@ -109,7 +110,7 @@ public class AnnouncementsActivity extends AppCompatActivity {
                             public void onClick(DialogInterface dialogInterface, int i) {
                                 announcement = announce_edit.getText().toString().trim();
                                 if (announcement.trim().isEmpty()) {
-                                    Toast.makeText(AnnouncementsActivity.this, "Field Cannot be empty", Toast.LENGTH_SHORT).show();
+                                    Toast.makeText(AnnouncementsActivity.this, KEY_EMPTY, Toast.LENGTH_SHORT).show();
 
                                 } else {
                                     //Save announcement into user document
