@@ -1,2 +1,11 @@
 # YNote
-YNote is Special Note taking App for college Students where they can store notes both in Audio and written format, Schedule classes and share announcements with friends. Students can also add their friends to their lists, share announcements between them and view notes in a slideshow too.
+With YNote you can:
+
+* Create Classes and Courses For all your subjects
+* Schedule Classes and Set Reminders
+* Add Friends to your Lists and make announcements to them
+* View Notes in both audio and written Format
+* View Notes in a slideshow format
+
+
+
